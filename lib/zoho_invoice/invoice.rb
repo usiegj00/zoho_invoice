@@ -47,6 +47,10 @@ module ZohoInvoice
       :payment_options,
       :payment_terms,
       :payment_terms_label,
+      :payment_made,
+      :payment_reminder_enabled,      
+      :credits_applied,
+      :tax_amount_withheld,
       :project_id,
       :quantity,
       :rate,
@@ -56,7 +60,9 @@ module ZohoInvoice
       :tax_id,
       :template_id,
       :time_entry_ids,
-      :unit
+      :unit,
+      :billing_address,
+      :shipping_address
     ]
 
     CREATE_UPDATE_ATTRIBUTES = READ_ATTRIBUTES - [:invoice_id]
