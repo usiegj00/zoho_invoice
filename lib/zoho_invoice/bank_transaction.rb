@@ -22,7 +22,6 @@ module ZohoInvoice
     define_object_attrs(*READ_ATTRIBUTES)
 
     def self.all(client)
-      binding.pry
       retrieve(client, '/api/v3/banktransactions')
     end
 
