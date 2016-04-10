@@ -16,7 +16,8 @@ module ZohoInvoice
       :debit_or_credit,
       :offset_account_name,
       :reference_number,
-      :imported_transaction_id
+      :imported_transaction_id,
+      :description
     ]
 
     define_object_attrs(*READ_ATTRIBUTES)
