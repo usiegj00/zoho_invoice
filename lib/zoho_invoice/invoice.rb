@@ -103,5 +103,9 @@ module ZohoInvoice
       retrieve(client, "/api/v3/invoices/#{id}", false)
     end
 
+    def self.payments(client, id)
+      retrieve(client, "/api/v3/invoices/#{id}/payments")
+    end
+
   end
 end

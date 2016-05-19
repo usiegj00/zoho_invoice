@@ -6,11 +6,11 @@ require 'zoho_invoice/version'
 Gem::Specification.new do |gem|
   gem.name          = "zoho_invoice"
   gem.version       = ZohoInvoice::VERSION
-  gem.authors       = ["Rimas Silkaitis"]
-  gem.email         = ["neovintage@gmail.com"]
+  gem.authors       = ["Rimas Silkaitis", "Jonathan Siegel"]
+  gem.email         = ["support@xenon.io"]
   gem.summary       = %q{Zoho Invoice API}
   gem.description   = %q{Ruby wrapper for the Zoho Invoice API.  Documentation for the Zoho Invoice API can be found at http://zoho.com}
-  gem.homepage      = "https://github.com/neovintage/zoho_invoice"
+  gem.homepage      = "https://github.com/usiegj00/zoho_invoice"
 
   gem.required_ruby_version     = ">= 1.9.3"
   gem.required_rubygems_version = ">= 1.3.6"
