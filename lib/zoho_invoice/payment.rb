@@ -18,16 +18,16 @@ module ZohoInvoice
 
     define_object_attrs(*READ_ATTRIBUTES)
 
-    def self.all(client, invoice_id)
+    def self.all(client)
       retrieve(client, '/api/v3/customerpayments')
     end
 
-    def self.for_invoice(client, invoice_id)
-      retrieve(client, '/api/v3/#{invoice_id}/payments')
+    def self.find(client, payment_id, options={})
+      retrieve(client, "/api/v3/customerpayments/#{payment_id}", false)
     end
 
-    def self.find(client, id, options={})
-      retrieve(client, "/api/v3/customerpayments/#{id}", false)
+    def self.for_invoice(client, invoice_id)
+      retrieve(client, "/api/v3/invoices/#{invoice_id}/payments")
     end
 
   end
